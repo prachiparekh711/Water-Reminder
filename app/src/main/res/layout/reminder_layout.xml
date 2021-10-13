@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_5sdp">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <TextView
+            android:id="@+id/rTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="06:00 am"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp"></TextView>
+
+        <Switch
+            android:id="@+id/rSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:theme="@style/SCBSwitch"></Switch>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/base_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/fixed_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Everyday" />
+
+                <ImageView
+                    android:id="@+id/arrow_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/my_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fixed_layout"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="7.0">
+
+                <TextView
+                    android:id="@+id/mon"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Mon"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tue"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Tue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/wed"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Wed"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/thu"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Thu"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/fri"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Fri"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/sat"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Sat"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/sun"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/ic_g36"
+                    android:gravity="center"
+                    android:text="Sun"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_9sdp"></TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_view"
+                android:layout_alignParentRight="true"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="Delete"
+                android:textColor="#FF0025"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone"></TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

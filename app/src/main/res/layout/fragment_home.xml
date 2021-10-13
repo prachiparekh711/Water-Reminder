@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="home_fragment"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2.0">
+
+                    <ImageView
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_270sdp"
+                        android:layout_marginLeft="-90dp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/ic_h20_home_vector"></ImageView>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.9">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/t4"
+                            android:layout_centerInParent="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/drunkML"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17sdp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="@dimen/_5sdp"
+                                android:text="/"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17sdp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:id="@+id/targetML"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_17sdp"
+                                android:textStyle="bold"></TextView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Daily Drink Target"
+                            android:textColor="@color/black"></TextView>
+
+                        <TextView
+                            android:id="@+id/logo_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/t4"
+                            android:layout_centerInParent="true"
+                            android:text="Target Achieved !!!"
+                            android:textColor="#3E8AFB"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <RelativeLayout
+                            android:id="@+id/cupSelector"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:background="@drawable/ic_group_366">
+
+                            <ImageView
+                                android:id="@+id/cupSelect"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/a11"></ImageView>
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/circle_shape"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progress="50"
+                            android:progressDrawable="@drawable/circular_progress_bar" />
+
+                        <RelativeLayout
+                            android:id="@+id/targetCop"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:layout_above="@id/arrow"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/ic_ellipse_69">
+
+                            <ImageView
+                                android:id="@+id/targetImg"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/b2"></ImageView>
+
+                            <TextView
+                                android:id="@+id/targetText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/targetImg"
+                                android:layout_centerHorizontal="true"
+                                android:text="150 ml"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="bold"></TextView>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_above="@id/t5"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_right_arrow__2_"></ImageView>
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_horizontal"
+                            android:text="Confirm that you have just drunk water"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_10sdp"></TextView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/recordsRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/progress"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingHorizontal="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/t6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Today's Records"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"></TextView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/t6"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <LinearLayout
+                            android:id="@+id/recordsLL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3.0">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/ic_clock"></ImageView>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.7"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nextTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="10:00 pm"
+                                    android:textColor="@color/black"></TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Next time"
+                                    android:textSize="@dimen/_8sdp"></TextView>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/nextML"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.4"
+                                android:text="150 ml"
+                                android:textSize="@dimen/_8sdp"></TextView>
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_weight="0.4"></ImageView>
+
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recordsLL"
+                            android:orientation="vertical"
+                            tools:listitem="@layout/records_layout">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_sheet1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:background="@drawable/ic_rectangle_29"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_group_407"></ImageView>
+
+        <TextView
+            android:id="@+id/cupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Switch Cup"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/save"
+            android:layout_below="@id/cupText"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+
+            <RelativeLayout
+                android:id="@+id/cr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/c1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img0"></ImageView>
+
+                <TextView
+                    android:id="@+id/ct1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/c1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Customize"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"></TextView>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cupRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/save"
+                android:layout_below="@id/cupText"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/cup_layout"></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/save"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:src="@drawable/ic_group_408"></ImageView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

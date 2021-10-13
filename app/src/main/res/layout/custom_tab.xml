@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_68sdp"
+        android:src="@drawable/ic_rectangle_23"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/tabIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_group_324"></ImageView>
+
+</RelativeLayout>

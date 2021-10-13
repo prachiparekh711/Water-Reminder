@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/t1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <com.example.waterreminder.WheelView1
+            android:id="@+id/loop_viewKg"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:visibility="visible"
+            app:wheelViewContentTextColor="#ff000000"
+            app:wheelViewDrawItemCount="5"
+            app:wheelViewInitialPosition="3"
+            app:wheelViewIsLoopEnabled="true"
+            app:wheelViewLineColor="@color/grey"
+            app:wheelViewOverflowTextColor="#ffafafaf"
+            app:wheelViewTextSize="@dimen/_20sdp" />
+
+        <com.example.waterreminder.WheelView1
+
+            android:id="@+id/loop_viewLbs"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:wheelViewContentTextColor="#ff000000"
+            app:wheelViewDrawItemCount="5"
+            app:wheelViewInitialPosition="3"
+            app:wheelViewIsLoopEnabled="true"
+            app:wheelViewLineColor="@color/grey"
+            app:wheelViewOverflowTextColor="#ffafafaf"
+            app:wheelViewTextSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/wType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Kg"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"></TextView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

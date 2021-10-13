@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenderPage1">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_left_arrow"></ImageView>
+
+        <ImageView
+            android:id="@+id/skip"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_group_85"
+            android:visibility="gone"></ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:src="@drawable/path"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="4.0">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_group_81"></ImageView>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img1"
+                    android:layout_centerInParent="true"
+                    android:text="Male"
+                    android:textColor="@color/black"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_group_79"></ImageView>
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img2"
+                    android:layout_centerInParent="true"
+                    android:text="65 Kg"
+                    android:textColor="@color/black"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_group_83"></ImageView>
+
+                <TextView
+                    android:id="@+id/mtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img3"
+                    android:layout_centerInParent="true"
+                    android:text="06:00"
+                    android:textColor="@color/black"></TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_group_84"></ImageView>
+
+                <TextView
+                    android:id="@+id/ntime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img4"
+                    android:layout_centerInParent="true"
+                    android:text="10:00"
+                    android:textColor="@color/black"></TextView>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/t2"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Your Gender"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"></TextView>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="We'll Provide you with tailored advice"></TextView>
+
+    <LinearLayout
+        android:id="@+id/mf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <ImageView
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_weight="1.0"
+            android:paddingRight="@dimen/_30sdp"
+            android:src="@drawable/ic_group_64"></ImageView>
+
+        <ImageView
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_weight="1.0"
+            android:paddingLeft="@dimen/_30sdp"
+            android:src="@drawable/ic_group_65"></ImageView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/next1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_70sdp"
+        android:src="@drawable/ic_next1"></ImageView>
+
+</RelativeLayout>
